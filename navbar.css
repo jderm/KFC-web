@@ -1,0 +1,209 @@
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FBF0E1;
+}
+
+nav
+{
+    height: 80px;
+    background: #A6192E;
+}
+
+nav picture img
+{
+    width: 130px;
+    position: absolute;
+    top: 20px;
+    left: 8%;
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li
+{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a
+{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover
+{
+    color: #2D2926;
+}
+
+nav ul li #bg:hover
+{
+    color: white;
+    background-color:#FBB03B;
+}
+
+nav ul li #bg
+{
+    width: 100%;
+    height: 100%;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #2D2926;
+    border-radius: 10px;
+    background-color: white;
+}
+
+label #btn, label #cancel
+{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check
+{
+    display: none;
+
+}
+
+@media (max-width: 1180px)
+{
+    nav picture img
+    {
+        left: 6%;
+    }
+}
+
+@media (max-width: 944px)
+{
+    nav picture img
+    {
+        left: 4%;
+        top: 20px;
+        width: 130px;
+    }
+
+    nav ul li a
+    {
+        font-size: 17px;
+    }
+
+    nav ul li
+    {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 860px)
+{
+    nav label #btn
+    {
+        display: block;
+    }
+
+    nav ul li #bg
+    {
+        width: unset;
+        height: unset;
+        padding: 0;
+        color: white;
+        border-radius: unset;
+        background-color: unset;
+    }
+
+    nav ul li #bg:hover
+    {
+        color:#2D2926;
+        background-color:unset;
+    }
+
+    nav ul
+    {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background:#A6192E;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 99;
+    }
+
+    nav
+    {
+        position: relative;
+    }
+
+    nav picture img
+    {
+        top: 0;
+        left: 0;
+        position: relative;
+        width: 60px;
+    }
+
+    nav picture
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+
+    nav #bttns
+    {
+        position: inherit;
+    }
+
+    nav ul li
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a
+    {
+        font-size: 20px;       
+    }
+
+    #check:checked ~ ul
+    {
+        left: 0;
+    }
+
+    #check:checked ~ label #btn
+    {
+        display: none;
+    }
+
+    #check:checked ~ label #cancel
+    {
+        display: block;
+    }
+}

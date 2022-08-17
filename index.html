@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet"  href="navbar.css">
+        <link rel="stylesheet"  href="imgslider.css">
+        <link rel="stylesheet"  href="info.css">
+        <link rel="stylesheet"  href="footer.css">
+
+        <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/ed76127bd7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            
+            <picture>
+                <source srcset="img/logo2.png" media="(max-width: 860px)">
+                <source srcset="img/logo1.png" media="(min-width: 861px)">    
+                <img src="img/logo1.png">
+            </picture>
+            <label id="bttns" for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <ul>
+                <li><a id="bg" href="#">OBJEDNEJ</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">ROZVOZ</a></li>
+                <li><a href="#">RESTAURACE</a></li>
+                <li><a href="#">PRÁCE</a></li>
+                <li><a href="#">KONTAKT</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <input type="radio" id="i1" name="images" checked/>
+            <input type="radio" id="i2" name="images" />
+            <input type="radio" id="i3" name="images" />
+            <input type="radio" id="i4" name="images"  />
+            
+            <div class="slide_img" id="one">			
+                <img srcset="img/nabídka800px.png 1180w, img/nabídka400px.png 940w, img/nabídka400pxm.png 860w">
+            </div>
+            
+            <div class="slide_img" id="two">                
+                <img srcset="img/nabídka800px.png 1180w, img/nabídka400px.png 940w, img/nabídka400pxm.png 860w">      
+            </div>
+                    
+            <div class="slide_img" id="three">
+                <img srcset="img/nabídka800px.png 1180w, img/nabídka400px.png 940w, img/nabídka400pxm.png 860w">	  
+            </div>
+
+            <div class="slide_img" id="four">
+                <img srcset="img/nabídka800px.png 1180w, img/nabídka400px.png 940w, img/nabídka400pxm.png 860w">	     
+            </div>
+        
+            <div id="nav_slide">
+                <label for="i1" class="dots" id="dot1"></label>
+                <label for="i2" class="dots" id="dot2"></label>
+                <label for="i3" class="dots" id="dot3"></label>
+                <label for="i4" class="dots" id="dot4"></label>
+            </div>                
+        </div>
+
+        <div class="row1">
+            <div class="img_left">
+                <img srcset="img/baner1_540.png 1180w, img/baner1_270.png 940w" style="width:100%">
+            </div>
+        
+            <div class="txt_right">
+                <h1>ČERSTVĚ PŘIPRAVOVANÉ NA MÍSTĚ</h1>
+                <p>KAŽDÝ KUS MASA JE PRO VÁS RUČNĚ PŘIPRAVOVANÝ
+                A SMAŽENÝ NEBO GRILOVANÝ CHVÍLI PŘED PODÁVÁNÍM.
+                NEPOUŽÍVÁME MLETÉ NEBO MRAŽENÉ MASO.
+                </p>
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="img_left">
+                <img srcset="img/baner2_540.png 1180w, img/baner2_270.png 940w" style="width:100%">
+            </div>
+        
+            <div class="txt_left">
+                <h1>PŘIPRAVOVÁNO Z ČERSTVÝCH SUROVIN</h1>
+                <p>NAŠE JÍDLO JE PŘIPRAVOVÁNO POUZE Z ČERSTVÝCH
+                    A EKOLOGICKY VYPĚSTOVANÝCH SUROVIN. MASO
+                    ZÍSKÁVÁME Z BIOFAREM PRO ZAJIŠTĚNÍ MAXIMÁLNÍ
+                    KVALITY PRO VÁS.
+                </p>
+            </div>           
+        </div>
+
+        <div class="row1">
+            <div class="img_left">
+                <img srcset="img/baner3_540.png 1180w, img/baner3_270.png 940w" style="width:100%">
+            </div>
+
+            <div class="txt_right">
+                <h1>DŮLEŽITÁ JE VAŠE SPOKOJENOST!</h1>
+                <p>SNAŽÍME SE DĚLAT MAXIMÁLNĚ VŠE PRO
+                    VAŠÍ SPOKOJENOST A ABY JSTE SE NEMUSELI
+                    BÁT K NÁM ZNOVU VRÁTIT.
+                </p>
+                <h2>DOBROU CHUŤ!</h2>
+            </div>
+        </div>
+
+        <div class="footer_main">
+            <div class="footer_links">
+                <div class="collumn1">
+                    <div class="header">
+                        <h1>NAŠE NABÍDKA</h1>
+                    </div>
+    
+                    <div class="list1">
+                        <ul>
+                        <li><a href="#">Limitovaná nabídka</a></li>
+                        <li><a href="#">Novinky</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Burgery</a></li>
+                        <li><a href="#">Wrapy</a></li>
+                        <li><a href="#">Dezerty</a></li>
+                        <li><a href="#">Přílohy</a></li>
+                        <li><a href="#">Nápoje</a></li>
+                        <li><a href="#">Saláty</a></li>
+                        <li><a href="#">Kousky</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="collumn2">
+                    <div class="header">
+                        <h1>KFC</h1>
+                    </div>
+    
+                    <div class="list2">
+                        <ul>
+                            <li><a href="#">Historie KFC</a></li>
+                            <li><a href="#">Kariéra</a></li>
+                            <li><a href="#">Kontakty</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="collumn3">
+                    <div class="header">
+                        <h1>PRODUKTOVÉ INFO</h1>
+                    </div>
+    
+                    <div class="list3">
+                        <ul>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Nutriční hodnoty</a></li>
+                            <li><a href="#">Cenník</a></li>
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+    
+        <div class="social">
+                <a href="#"><img src="img/mail.png"></a>
+                <a href="#"><img src="img/twitter.png"></a>
+                <a href="#"><img src="img/youtube.png"></a>
+                <a href="#"><img src="img/instagram.png"></a>
+                <a href="#"><img src="img/facebook.png"></a>
+            </div>
+    
+            <div class="logo">
+                <div class="logo_pic">
+                    <img src="img/logo3.png">
+                </div>
+                <div class="copyright">
+                    <p>© KFC 2020</p>
+                </div>
+            </div>
+
+            <script>
+                onload  = start;
+    
+                function start()
+                {	
+                    var i = 1;
+                    function change()
+                    { 	
+                        i = (i%4)+1;
+                        document.getElementById('i'+i).checked = true;
+                    }
+                    setInterval(change,5000);
+                }
+            </script>   
+        </div>
+    </body>
+</html>
