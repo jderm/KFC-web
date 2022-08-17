@@ -1,97 +1,84 @@
-.img_left
-{
-    width: 50%;
-    float: left;
+.img_left {
+  width: 50%;
+  float: left;
 }
 
-.img_left
-{
-    width: 50%;
-    float: right;
+.img_left {
+  width: 50%;
+  float: right;
 }
 
-.txt_right
-{
-    float: right;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    direction: ltr;
+.txt_right {
+  float: right;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  direction: ltr;
 }
 
-.txt_left
-{
-    float: left;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    direction: ltr;
+.txt_left {
+  float: left;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  direction: ltr;
 }
 
-.txt_left p, .txt_right p
-{
-    padding-left: 5%;
-    padding-right: 5%;
-    font-size: 20px;
+.txt_left p,
+.txt_right p {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 20px;
 }
-.txt_left h1, .txt_right h1
-{
-    text-decoration: underline;
-    padding-left: 5%;
-    padding-right: 5%;
+.txt_left h1,
+.txt_right h1 {
+  text-decoration: underline;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.row1
-{
-    display: flex;
+.row1 {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  direction: ltr;
+}
+
+.row2 {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  direction: rtl;
+}
+
+@media (max-width: 944px) {
+  .img_left {
     width: 100%;
-    padding-bottom: 20px;
-    direction: ltr;
-}
+  }
 
-.row2
-{
-    display: flex;
+  .txt_right {
+    padding: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
     width: 100%;
-    padding-bottom: 20px;
-    direction: rtl;
-}
+  }
 
-@media (max-width: 944px)
-{
-    .img_left
-    {
-        width: 100%;
-    }
+  .img_left {
+    width: 100%;
+  }
 
-    .txt_right
-    {
-        padding: 0;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        width: 100%;
-    }
+  .txt_left {
+    padding: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+  }
 
-    .img_left
-    {
-        width: 100%;
-    }
+  .row1 {
+    display: inline-block;
+  }
 
-    .txt_left
-    {
-        padding: 0;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        width: 100%;
-    }
-
-    .row1
-    {
-        display: inline-block;
-    }
-
-    .row2
-    {
-        display: inline-block;
-    }
+  .row2 {
+    display: inline-block;
+  }
 }
